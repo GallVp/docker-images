@@ -1,6 +1,6 @@
 FROM debian:stable
 
-RUN apt-get update && apt-get install -y git python3 python3-pip wkhtmltopdf
+RUN apt-get update && apt-get install -y git python3 python3-pip wkhtmltopdf curl libcurl4
 
 RUN cd /usr/bin && ln -s ./python3 ./python
 
