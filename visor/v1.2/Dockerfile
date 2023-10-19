@@ -6,7 +6,7 @@ RUN apt-get install -y bedtools r-base samtools minimap2
 RUn apt-get clean
 
 RUN git clone https://github.com/gallvp/VISOR.git
-RUN cd VISOR && git checkout be667377ad9521bc707a2e5a851ff5b9e515b61a
+RUN cd VISOR && git checkout dac223508051b38c2777a24aa91e694b1e7db16d
 RUN cd VISOR && pip3 install -r requirements.txt
 RUN cd VISOR && pip3 install --upgrade cython
 RUN cd VISOR && pip3 install pyfaidx==0.7.2.2 pysam==0.22.0 pywgsim==0.5.2 pybedtools==0.9.1 mappy==2.26 plotly==5.17.0 numpy==1.26.1
